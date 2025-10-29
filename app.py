@@ -165,7 +165,7 @@ def tela_quiz():
     )
 
     nome_atual = st.session_state.nome1 if st.session_state.jogador_atual == 1 else st.session_state.nome2
-    st.subheader(f"👤 Jogador da vez: {nome_atual}")
+    st.subheader(f"👤 Jogador da vez a responder: {nome_atual}")
     col1, col2 = st.columns(2)
     with col1:
         if st.button("✅ Acertou"):
